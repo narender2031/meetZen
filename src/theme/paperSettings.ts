@@ -1,6 +1,7 @@
 import CustomFontAwsomeIcons from './CustomFontAwsomeIcons';
 
+console.log('Enter');
 export default {
-  Icon: CustomFontAwsomeIcons,
+  icon: CustomFontAwsomeIcons,
   rippleEffectEnabled: true,
 };
