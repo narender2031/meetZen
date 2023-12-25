@@ -1,16 +1,16 @@
 import React from 'react';
-import {Button, PaperProvider, Text} from 'react-native-paper';
+import {Button, Text} from 'react-native-paper';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import settings from './theme/paperSettings';
+import CustomPaperProvider from './theme/CustomPaperProvider';
 
 export const App = () => {
   return (
-    <PaperProvider settings={settings}>
+    <CustomPaperProvider>
       <SafeAreaView>
         <Text>Hello</Text>
         <Button icon={'facebook'}>Hello</Button>
       </SafeAreaView>
-    </PaperProvider>
+    </CustomPaperProvider>
   );
 };
 
