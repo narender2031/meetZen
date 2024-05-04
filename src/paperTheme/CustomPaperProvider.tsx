@@ -6,11 +6,9 @@ import {getCurrentThemeId} from './theme';
 type TCustomPaperProviderProps = {children: React.ReactNode};
 
 const CustomPaperProvider = (props: TCustomPaperProviderProps) => {
-  const currentTheme = getCurrentThemeId();
+  // const currentTheme = getCurrentThemeId();
 
-  return (
-    <PaperProvider settings={paperSettings} {...props} theme={currentTheme} />
-  );
+  return <PaperProvider settings={paperSettings} {...props} />;
 };
 
 export default CustomPaperProvider;
